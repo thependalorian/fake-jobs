@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancr.org - Massachusetts Clean Energy Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Lancr.org</h1>
+                <span class="tagline">Clean Energy Jobs Massachusetts</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="active">Browse Jobs</a>
+                <a href="#">Career Training</a>
+                <a href="#">Job Resources</a>
+                <a href="#">Contact</a>
+                <button class="post-job-btn">Post a Job</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <h2>Clean Energy Jobs in Massachusetts</h2>
+            <p>Find your next career in renewable energy, energy efficiency, and clean tech</p>
+            <div class="search-bar">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search job titles or keywords" id="search">
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="City or region in MA" id="location">
+                </div>
+                <button class="search-btn">Find Jobs</button>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <aside class="filters">
+                <h3>Filter Jobs</h3>
+                
+                <div class="filter-section">
+                    <h4>Clean Energy Sector</h4>
+                    <label><input type="checkbox" value="solar"> Solar & Storage</label>
+                    <label><input type="checkbox" value="wind"> Offshore Wind</label>
+                    <label><input type="checkbox" value="efficiency"> Energy Efficiency</label>
+                    <label><input type="checkbox" value="ev"> Electric Vehicles</label>
+                    <label><input type="checkbox" value="grid"> Grid Modernization</label>
+                    <label><input type="checkbox" value="policy"> Energy Policy</label>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Location</h4>
+                    <label><input type="checkbox" value="boston"> Greater Boston</label>
+                    <label><input type="checkbox" value="worcester"> Worcester Region</label>
+                    <label><input type="checkbox" value="cape"> Cape & Islands</label>
+                    <label><input type="checkbox" value="western"> Western Mass</label>
+                    <label><input type="checkbox" value="northeast"> Northeast MA</label>
+                    <label><input type="checkbox" value="southeast"> Southeast MA</label>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Experience Level</h4>
+                    <label><input type="checkbox" value="entry"> Entry Level</label>
+                    <label><input type="checkbox" value="mid"> Mid Level</label>
+                    <label><input type="checkbox" value="senior"> Senior Level</label>
+                    <label><input type="checkbox" value="executive"> Executive</label>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Employment Type</h4>
+                    <label><input type="checkbox" value="full-time"> Full Time</label>
+                    <label><input type="checkbox" value="part-time"> Part Time</label>
+                    <label><input type="checkbox" value="contract"> Contract</label>
+                    <label><input type="checkbox" value="internship"> Internship/Co-op</label>
+                </div>
+
+                <div class="filter-section">
+                    <button class="clear-filters">Clear All Filters</button>
+                </div>
+            </aside>
+
+            <section class="job-listings">
+                <div class="listings-header">
+                    <div class="listings-count">
+                        <h3>Clean Energy Jobs</h3>
+                        <span class="count">Showing <span id="jobs-count">0</span> positions</span>
+                    </div>
+                    <div class="sort-options">
+                        <label>Sort by: </label>
+                        <select id="sort-by">
+                            <option value="date">Most Recent</option>
+                            <option value="title">Job Title</option>
+                            <option value="company">Company</option>
+                            <option value="salary">Salary Range</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="jobs-container">
+                    <!-- Jobs will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Lancr.org</h4>
+                <p>Supporting Massachusetts' transition to clean energy through workforce development and job connections.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Career Resources</h4>
+                <a href="#">Training Programs</a>
+                <a href="#">Career Guides</a>
+                <a href="#">Salary Data</a>
+                <a href="#">Job Search Tips</a>
+            </div>
+            <div class="footer-section">
+                <h4>Industry Partners</h4>
+                <p>MassCEC</p>
+                <p>Mass Clean Energy Center</p>
+                <p>Clean Energy Workforce Alliance</p>
+                <p>Northeast Clean Energy Council</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lancr.org - Massachusetts Clean Energy Career Hub</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
